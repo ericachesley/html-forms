@@ -8,69 +8,77 @@
 
     <body>
 
-        <h1> Order a Melongram </h1>
+        <header>
+            <h1> Order a Melongram </h1>
+        </header>
 
-        <p> There's no better way to show a loved one you care than with a Melongram. </p>
+        <section id="intro">
+            <p> There's no better way to show a loved one you care than with a Melongram. </p>
 
-        <p> Each Melongram comes with a custom message printed on high-quality cardstock and your choice of a hand-picked, premium melon. </p>
+            <p> Each Melongram comes with a custom message printed on high-quality cardstock and your choice of a hand-picked, premium melon. </p>
+        </section>
 
-        <h2> Melon Options </h2>
+        <section id="options">
+            <h2> Melon Options </h2>
 
-        <p> Choose from one of these melons: </p>
+            <p> Choose from one of these melons: </p>
 
-        <table>
-            <tr> <td>Watermelon</td> <td>$1,200.00</td> </tr>
-            <tr> <td>Canteloupe</td> <td>$400.00</td> </tr>
-            <tr> <td>Honeydew</td> <td>$1,750,00.00</td> </tr>
-        </table>
+            <table>
+                <tr> <td>Watermelon</td> <td>$1,200.00</td> </tr>
+                <tr> <td>Canteloupe</td> <td>$400.00</td> </tr>
+                <tr> <td>Honeydew</td> <td>$1,750,00.00</td> </tr>
+            </table>
+        </section>
 
-        <h2>Order Form</h2>
+        <section id="order-form">
+            <h2>Order Form</h2>
 
-        <form>
-            <div>
-                <label for="input-name">Your name</label>
-                <input type="text" name="name" id="input-name">
-            </div>
+            <form>
+                <fieldset>
+                    <legend for="input-name">Your name</legend>
+                    <input type="text" name="name" id="input-name">
+                </fieldset>
 
-            <div>
-                <label for="recipient-name">Who are we sending this to?</label>
-                <input type="text" name="recipient" id="recipient-name">
-            </div>
+                <fieldset>
+                    <legend for="recipient-name">Who are we sending this to?</legend>
+                    <input type="text" name="recipient" id="recipient-name">
+                </fieldset>
 
-            <div>
-                <label for="melon-type">Choose a melon</label>
-                <select name="melon" id="melon-type">
-                    <option value="watermelon">Watermelon</option>
-                    <option value="canteloupe">Canteloupe</option>
-                    <option value="honeydew">Honeydew</option>
-                </select>
-            </div>
+                <fieldset>
+                    <legend for="melon-type">Choose a melon</legend>
+                    <select name="melon" id="melon-type">
+                        <option value="watermelon">Watermelon</option>
+                        <option value="canteloupe">Canteloupe</option>
+                        <option value="honeydew">Honeydew</option>
+                    </select>
+                </fieldset>
 
-            <div>
-                <label for="delivery-time">When should we deliver?</label>
-                <input type="radio" name="time" value="am" id="delivery-time">
-                <label for="delivery-time">Morning</label>
-                <input type="radio" name="time" value="pm" id="delivery-time">
-                <label for="delivery-time">Evening</label>
-                <input type="radio" name="time" value="any" id="delivery-time">
-                <label for="delivery-time">Any time</label>
-            </div>
+                <fieldset>
+                    <legend for="delivery-time">When should we deliver?</legend>
+                    <input type="radio" name="time" value="am" id="delivery-time">
+                    <label for="delivery-time">Morning</label>
+                    <input type="radio" name="time" value="pm" id="delivery-time">
+                    <label for="delivery-time">Evening</label>
+                    <input type="radio" name="time" value="any" id="delivery-time">
+                    <label for="delivery-time">Any time</label>
+                </fieldset>
 
-            <div>
-                <label for="enter-message">Enter your message:</label>
-                <textarea name="message" id="enter-message"></textarea>
-            </div>
+                <fieldset>
+                    <legend for="enter-message">Enter your message:</legend>
+                    <textarea name="message" id="enter-message"></textarea>
+                </fieldset>
+             
+                <fieldset>
+                    <legend for="subscribe">Subscribe to our newsletter</legend>
+                    <input type="checkbox" name="subscribe" value="yes" id="subscribe">
+                    <label for="subscribe">Yes</label>
+                </fieldset>
 
-            <div>
-                <label for="subscribe">Subscribe to our newsletter</label>
-                <input type="checkbox" name="subscribe" value="yes" id="subscribe">
-                <label for="subscribe">Yes</label>
-            </div>
-
-            <div>
-                <input type="submit">
-            </div>
-        </form>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
 
     </body>
 </html>
